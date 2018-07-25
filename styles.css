@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body > .layer {
+    position: absolute;
+    background: transparent;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    box-sizing: border-box;
+
+    transition: all 200ms ease-in;
+}
+
+#video, #canvas {
+    position: absolute;
+    z-index: 0;
+}
