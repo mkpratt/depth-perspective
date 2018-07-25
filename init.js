@@ -44,7 +44,7 @@ for (let i = 1; i <= layers; i++) {
     el.style.borderStyle = 'solid';
     el.style.zIndex = layers - (i - 1);
     body.appendChild(el);
-    
+
     elArr.push(el);
 }
 
@@ -75,7 +75,7 @@ tracker.on('track', function (event) {
 
         // faceXLabel.textContent = 'X: ' + facePosX + '%'; //320
         // faceYLabel.textContent = 'Y: ' + facePosY + '%'; //240
-        
+
         elArr.forEach((el, idx) => {
             let newPosX = -50 + facePosX;
             el.style.marginLeft = (newPosX * (el.leftRightWidth / (layers * (layers / 10)))) + 'px';
